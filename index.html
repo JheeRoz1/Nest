@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nest Bed — a thoughtfully designed multifunctional bed with elegant aesthetics, smart storage, and everyday comfort."
+    />
+    <title>Nest Bed | Nest Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <p class="brand-mark" aria-hidden="true">Nest</p>
+        <div
+          class="lang-switcher"
+          role="group"
+          aria-label="Language"
+          data-i18n-aria="langGroup"
+        >
+          <button
+            type="button"
+            class="lang-switcher__btn is-active"
+            data-lang="en"
+            aria-pressed="true"
+          >
+            EN
+          </button>
+          <span class="lang-switcher__divider" aria-hidden="true">|</span>
+          <button
+            type="button"
+            class="lang-switcher__btn"
+            data-lang="tr"
+            aria-pressed="false"
+          >
+            TR
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="product" aria-labelledby="product-title">
+        <div class="product__grid">
+          <figure class="product__media">
+            <img
+              src="assets/nest-bed.jpg"
+              alt="Nest Bed multifunctional oak cabinet bed"
+              width="1200"
+              height="900"
+              loading="eager"
+              decoding="async"
+              data-i18n-alt="imageAlt"
+            />
+          </figure>
+
+          <div class="product__info">
+            <p class="product__eyebrow" data-i18n="eyebrow">NEST COLLECTION</p>
+            <h1 id="product-title" class="product__title" data-i18n="title">
+              Nest Bed
+            </h1>
+            <p class="product__description" data-i18n="description">
+              A thoughtfully designed multifunctional bed that combines elegant
+              aesthetics, smart storage, and everyday comfort.
+            </p>
+
+            <dl class="product__specs">
+              <div class="product__spec">
+                <dt data-i18n="cabinet">Cabinet</dt>
+                <dd>1750 × 420 × 2150 mm</dd>
+              </div>
+              <div class="product__spec">
+                <dt data-i18n="sleepingArea">Sleeping Area</dt>
+                <dd>1600 × 2000 mm</dd>
+              </div>
+            </dl>
+
+            <p class="product__price" aria-label="Price" data-i18n-aria="price">
+              <span class="product__price-value">₺ XX,XXX</span>
+            </p>
+
+            <div class="product__actions">
+              <button type="button" class="btn-preorder" data-i18n="cta">
+                Pre-order
+              </button>
+              <p class="product__tagline" data-i18n="tagline">
+                Designed for modern living.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="modal"
+      id="preorder-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+      aria-hidden="true"
+      hidden
+    >
+      <div class="modal__backdrop" data-modal-close></div>
+      <div class="modal__panel" role="document">
+        <button
+          type="button"
+          class="modal__close"
+          data-modal-close
+          aria-label="Close"
+          data-i18n-aria="close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 id="modal-title" class="modal__title" data-i18n="modalTitle">
+          Pre-order received
+        </h2>
+        <p class="modal__text" data-i18n="modalText">
+          Thank you for your interest in Nest Bed. We will contact you shortly
+          with pre-order details.
+        </p>
+        <button type="button" class="btn-preorder btn-preorder--compact" data-modal-close data-i18n="modalClose">
+          Close
+        </button>
+      </div>
+    </div>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
